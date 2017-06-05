@@ -1,0 +1,473 @@
+/* extra large size */
+
+@media (min-width: 1920px){
+
+  [mod-if-screen-xl~="fab-sm"][mod-button]{
+		height: 22px;
+		width: 22px;
+		font-size: 13px;
+		line-height: 22px;
+	}
+	[mod-if-screen-xl~="fab-md"][mod-button]{
+		height: 32px;
+		width: 32px;
+		font-size: 18px; 
+		line-height: 32px; 
+	}
+	[mod-if-screen-xl~="fab-lg"][mod-button]{
+		height: 42px;
+		width: 42px;
+		font-size: 27px;
+		line-height: 42px;
+	}
+	[mod-if-screen-xl~="fab-xl"][mod-button]{
+		height: 50px;
+		width: 50px;
+		font-size: 32px;
+		line-height: 50px; 
+	}
+	[mod-if-screen-xl~="fab-xxl"][mod-button]{
+		height: 58px;
+		width: 58px;
+		font-size: 38px;
+		line-height: 58px;  
+	}
+	[mod-if-screen-xl~="mod-group-sm"] [mod-button],
+	[mod-if-screen-xl~="mod-button-sm"][mod-button]{
+		padding: 2px 5px 1px;
+		font-size: 12px;
+		line-height: 1.2;
+	}
+	[mod-if-screen-xl~="mod-group-md"] [mod-button],
+	[mod-if-screen-xl~="mod-button-md"][mod-button]{
+		padding: 5px  10px;
+		font-size: 14px;
+  	line-height: 1.42857143;
+	}
+	[mod-if-screen-xl~="mod-group-lg"] [mod-button],
+	[mod-if-screen-xl~="mod-button-lg"][mod-button]{
+		font-size: 17px;
+		padding: 8px  15px;
+	}
+	[mod-if-screen-xl~="mod-group-xl"] [mod-button],
+	[mod-if-screen-xl~="mod-button-xl"][mod-button]{
+		font-size: 21px;
+		padding: 9px 16px;
+	}
+	[mod-if-screen-xl~="mod-group-xxl"] [mod-button],
+	[mod-if-screen-xl~="mod-button-xxl"][mod-button]{
+		font-size: 27px;
+		padding: 9px 20px;
+	}
+
+	[mod-if-screen-xl~="mod-button-full-width"][mod-button],
+	[mod-if-screen-xl~="mod-group-full-width"]{
+		width: 100%;
+	}
+	[mod-if-screen-xl~="mod-group-vertical"]{
+		display: flex;
+		flex-direction: column !important;
+	}
+	[mod-if-screen-xl~="mod-group-horizontal"]{
+		display: flex;
+		flex-direction: row !important;
+	}
+	[mod-if-screen-xl~="mod-group-horizontal"] [mod-button]{
+		flex: 1;
+	}
+
+}
+
+/* large size */
+
+@media (max-width: 1920px){
+  
+	[mod-if-screen-lg~="fab-sm"][mod-button]{
+		height: 22px;
+		width: 22px;
+		font-size: 13px;
+		line-height: 22px;
+	}
+	[mod-if-screen-lg~="fab-md"][mod-button]{
+		height: 32px;
+		width: 32px;
+		font-size: 18px; 
+		line-height: 32px; 
+	}
+	[mod-if-screen-lg~="fab-lg"][mod-button]{
+		height: 42px;
+		width: 42px;
+		font-size: 27px;
+		line-height: 42px;
+	}
+	[mod-if-screen-lg~="fab-xl"][mod-button]{
+		height: 50px;
+		width: 50px;
+		font-size: 32px;
+		line-height: 50px; 
+	}
+	[mod-if-screen-lg~="fab-xxl"][mod-button]{
+		height: 58px;
+		width: 58px;
+		font-size: 38px;
+		line-height: 58px;  
+	}
+	[mod-if-screen-lg~="mod-group-sm"] [mod-button],
+	[mod-if-screen-lg~="mod-button-sm"][mod-button]{
+		padding: 2px 5px 1px;
+		font-size: 12px;
+		line-height: 1.2;
+	}
+	[mod-if-screen-lg~="mod-group-md"] [mod-button],
+	[mod-if-screen-lg~="mod-button-md"][mod-button]{
+		padding: 5px  10px;
+		font-size: 14px;
+  	line-height: 1.42857143;
+	}
+	[mod-if-screen-lg~="mod-group-lg"] [mod-button],
+	[mod-if-screen-lg~="mod-button-lg"][mod-button]{
+		font-size: 17px;
+		padding: 8px  15px;
+	}
+	[mod-if-screen-lg~="mod-group-xl"] [mod-button],
+	[mod-if-screen-lg~="mod-button-xl"][mod-button]{
+		font-size: 21px;
+		padding: 9px 16px;
+	}
+	[mod-if-screen-lg~="mod-group-xxl"] [mod-button],
+	[mod-if-screen-lg~="mod-button-xxl"][mod-button]{
+		font-size: 27px;
+		padding: 9px 20px;
+	}
+	[mod-if-screen-lg~="mod-button-full-width"][mod-button],
+	[mod-if-screen-lg~="mod-group-full-width"]{
+		width: 100%;
+	}
+	[mod-if-screen-lg~="mod-group-vertical"]{
+		display: flex;
+		flex-direction: column !important;
+	}
+	[mod-if-screen-lg~="mod-group-horizontal"]{
+		display: flex;
+		flex-direction: row !important;
+	}
+	[mod-if-screen-lg~="mod-group-horizontal"] [mod-button]{
+		flex: 1;
+	}
+
+}
+
+/* medium size */
+
+@media (max-width: 1280px){
+
+  [mod-if-screen-md~="fab-sm"][mod-button]{
+		height: 22px;
+		width: 22px;
+		font-size: 13px;
+		line-height: 22px;
+	}
+	[mod-if-screen-md~="fab-md"][mod-button]{
+		height: 32px;
+		width: 32px;
+		font-size: 18px; 
+		line-height: 32px; 
+	}
+	[mod-if-screen-md~="fab-lg"][mod-button]{
+		height: 42px;
+		width: 42px;
+		font-size: 27px;
+		line-height: 42px;
+	}
+	[mod-if-screen-md~="fab-xl"][mod-button]{
+		height: 50px;
+		width: 50px;
+		font-size: 32px;
+		line-height: 50px; 
+	}
+	[mod-if-screen-md~="fab-xxl"][mod-button]{
+		height: 58px;
+		width: 58px;
+		font-size: 38px;
+		line-height: 58px;  
+	}
+	[mod-if-screen-md~="mod-group-sm"] [mod-button],
+	[mod-if-screen-md~="mod-button-sm"][mod-button]{
+		padding: 2px 5px 1px;
+		font-size: 12px;
+		line-height: 1.2;
+	}
+	[mod-if-screen-md~="mod-group-md"] [mod-button],
+	[mod-if-screen-md~="mod-button-md"][mod-button]{
+		padding: 5px  10px;
+		font-size: 14px;
+  	line-height: 1.42857143;
+	}
+	[mod-if-screen-md~="mod-group-lg"] [mod-button],
+	[mod-if-screen-md~="mod-button-lg"][mod-button]{
+		font-size: 17px;
+		padding: 8px  15px;
+	}
+	[mod-if-screen-md~="mod-group-xl"] [mod-button],
+	[mod-if-screen-md~="mod-button-xl"][mod-button]{
+		font-size: 21px;
+		padding: 9px 16px;
+	}
+	[mod-if-screen-md~="mod-group-xxl"] [mod-button],
+	[mod-if-screen-md~="mod-button-xxl"][mod-button]{
+		font-size: 27px;
+		padding: 9px 20px;
+	}
+	[mod-if-screen-md~="mod-button-full-width"][mod-button],
+	[mod-if-screen-md~="mod-group-full-width"]{
+		width: 100%;
+	}
+	[mod-if-screen-md~="mod-group-vertical"]{
+		display: flex;
+		flex-direction: column !important;
+	}
+	[mod-if-screen-md~="mod-group-horizontal"]{
+		display: flex;
+		flex-direction: row !important;
+	}
+	[mod-if-screen-md~="mod-group-horizontal"] [mod-button]{
+		flex: 1;
+	}
+
+}
+
+/* small size */
+
+@media (max-width: 960px){
+  
+	[mod-if-screen-sm~="fab-sm"][mod-button]{
+		height: 22px;
+		width: 22px;
+		font-size: 13px;
+		line-height: 22px;
+	}
+	[mod-if-screen-sm~="fab-md"][mod-button]{
+		height: 32px;
+		width: 32px;
+		font-size: 18px; 
+		line-height: 32px; 
+	}
+	[mod-if-screen-sm~="fab-lg"][mod-button]{
+		height: 42px;
+		width: 42px;
+		font-size: 27px;
+		line-height: 42px;
+	}
+	[mod-if-screen-sm~="fab-xl"][mod-button]{
+		height: 50px;
+		width: 50px;
+		font-size: 32px;
+		line-height: 50px; 
+	}
+	[mod-if-screen-sm~="fab-xxl"][mod-button]{
+		height: 58px;
+		width: 58px;
+		font-size: 38px;
+		line-height: 58px;  
+	}
+	[mod-if-screen-sm~="mod-group-sm"] [mod-button],
+	[mod-if-screen-sm~="mod-button-sm"][mod-button]{
+		display: initial;
+		padding: 2px 5px 1px;
+		font-size: 12px;
+		line-height: 1.2;
+	}
+	[mod-if-screen-sm~="mod-group-md"] [mod-button],
+	[mod-if-screen-sm~="mod-button-md"][mod-button]{
+		padding: 5px  10px;
+		font-size: 14px;
+  	line-height: 1.42857143;
+	}
+	[mod-if-screen-sm~="mod-group-lg"] [mod-button],
+	[mod-if-screen-sm~="mod-button-lg"][mod-button]{
+		font-size: 17px;
+		padding: 8px  15px;
+	}
+	[mod-if-screen-sm~="mod-group-xl"] [mod-button],
+	[mod-if-screen-sm~="mod-button-xl"][mod-button]{
+		font-size: 21px;
+		padding: 9px 16px;
+	}
+	[mod-if-screen-sm~="mod-group-xxl"] [mod-button],
+	[mod-if-screen-sm~="mod-button-xxl"][mod-button]{
+		font-size: 27px;
+		padding: 9px 20px;
+	}
+	[mod-if-screen-sm~="mod-button-full-width"][mod-button],
+	[mod-if-screen-sm~="mod-group-full-width"]{
+		width: 100%;
+	}
+	[mod-if-screen-sm~="mod-group-vertical"]{
+		display: flex !important;
+		flex-direction: column !important;
+	}
+	[mod-if-screen-sm~="mod-group-horizontal"]{
+		display: flex !important;
+		flex-direction: row !important;
+	}
+	[mod-if-screen-sm~="mod-group-horizontal"] [mod-button]{
+		flex: 1;
+	}
+
+}
+
+/* extra small xs */
+
+@media (max-width: 748px){
+
+	[mod-if-screen-xs~="fab-sm"][mod-button]{
+		height: 22px;
+		width: 22px;
+		font-size: 13px;
+		line-height: 22px;
+	}
+	[mod-if-screen-xs~="fab-md"][mod-button]{
+		height: 32px;
+		width: 32px;
+		font-size: 18px; 
+		line-height: 32px; 
+	}
+	[mod-if-screen-xs~="fab-lg"][mod-button]{
+		height: 42px;
+		width: 42px;
+		font-size: 27px;
+		line-height: 42px;
+	}
+	[mod-if-screen-xs~="fab-xl"][mod-button]{
+		height: 50px;
+		width: 50px;
+		font-size: 32px;
+		line-height: 50px; 
+	}
+	[mod-if-screen-xs~="fab-xxl"][mod-button]{
+		height: 58px;
+		width: 58px;
+		font-size: 38px;
+		line-height: 58px;  
+	}
+	[mod-if-screen-xs~="mod-group-sm"] [mod-button],
+	[mod-if-screen-xs~="mod-button-sm"][mod-button]{
+		padding: 2px 5px 1px;
+		font-size: 12px;
+		line-height: 1.2;
+	}
+	[mod-if-screen-xs~="mod-group-md"] [mod-button],
+	[mod-if-screen-xs~="mod-button-md"][mod-button]{
+		padding: 5px  10px;
+		font-size: 14px;
+  	line-height: 1.42857143;
+	}
+	[mod-if-screen-xs~="mod-group-lg"] [mod-button],
+	[mod-if-screen-xs~="mod-button-lg"][mod-button]{
+		font-size: 17px;
+		padding: 8px  15px;
+	}
+	[mod-if-screen-xs~="mod-group-xl"] [mod-button],
+	[mod-if-screen-xs~="mod-button-xl"][mod-button]{
+		font-size: 21px;
+		padding: 9px 16px;
+	}
+	[mod-if-screen-xs~="mod-group-xxl"] [mod-button],
+	[mod-if-screen-xs~="mod-button-xxl"][mod-button]{
+		font-size: 27px;
+		padding: 9px 20px;
+	}
+	[mod-if-screen-xs~="mod-button-full-width"][mod-button],
+	[mod-if-screen-xs~="mod-group-full-width"]{
+		width: 100%;
+	}
+	[mod-if-screen-xs~="mod-group-vertical"]{
+		display: flex;
+		flex-direction: column !important;
+	}
+	[mod-if-screen-xs~="mod-group-horizontal"]{
+		display: flex;
+		flex-direction: row !important;
+	}
+	[mod-if-screen-xs~="mod-group-horizontal"] [mod-button]{
+		flex: 1;
+	}
+
+}
+
+/* extra extra small */
+
+@media (max-width: 480px){
+	[mod-if-screen-xxs~="fab-sm"][mod-button]{
+		height: 22px;
+		width: 22px;
+		font-size: 13px;
+		line-height: 22px;
+	}
+	[mod-if-screen-xxs~="fab-md"][mod-button]{
+		height: 32px;
+		width: 32px;
+		font-size: 18px; 
+		line-height: 32px; 
+	}
+	[mod-if-screen-xxs~="fab-lg"][mod-button]{
+		height: 42px;
+		width: 42px;
+		font-size: 27px;
+		line-height: 42px;
+	}
+	[mod-if-screen-xxs~="fab-xl"][mod-button]{
+		height: 50px;
+		width: 50px;
+		font-size: 32px;
+		line-height: 50px; 
+	}
+	[mod-if-screen-xxs~="fab-xxl"][mod-button]{
+		height: 58px;
+		width: 58px;
+		font-size: 38px;
+		line-height: 58px;  
+	}
+	[mod-if-screen-xxs~="mod-group-sm"] [mod-button],
+	[mod-if-screen-xxs~="mod-button-sm"][mod-button]{
+		padding: 2px 5px 1px;
+		font-size: 12px;
+		line-height: 1.2;
+	}
+	[mod-if-screen-xxs~="mod-group-md"] [mod-button],
+	[mod-if-screen-xxs~="mod-button-md"][mod-button]{
+		padding: 5px  10px;
+		font-size: 14px;
+  	line-height: 1.42857143;
+	}
+	[mod-if-screen-xxs~="mod-group-lg"] [mod-button],
+	[mod-if-screen-xxs~="mod-button-lg"][mod-button]{
+		font-size: 17px;
+		padding: 8px  15px;
+	}
+	[mod-if-screen-xxs~="mod-group-xl"] [mod-button],
+	[mod-if-screen-xxs~="mod-button-xl"][mod-button]{
+		font-size: 21px;
+		padding: 9px 16px;
+	}
+	[mod-if-screen-xxs~="mod-group-xxl"] [mod-button],
+	[mod-if-screen-xxs~="mod-button-xxl"][mod-button]{
+		font-size: 27px;
+		padding: 9px 20px;
+	}
+	[mod-if-screen-xxs~="mod-button-full-width"][mod-button],
+	[mod-if-screen-xxs~="mod-group-full-width"]{
+		width: 100%;
+	}
+	[mod-if-screen-xxs~="mod-group-vertical"]{
+		display: flex;
+		flex-direction: column !important;
+	}
+	[mod-if-screen-xxs~="mod-group-horizontal"]{
+		display: flex;
+		flex-direction: row !important;
+	}
+	[mod-if-screen-xxs~="mod-group-horizontal"] [mod-button]{
+		flex: 1;
+	}
+}

@@ -1,0 +1,419 @@
+/*
+  @about Modulr.css
+  -----------------------------------------
+  @desc: Pure Css Button Module
+  @author: Alan Museljic
+  @git: https://github.com/ModulrCSS/button
+  @source: http://www.getmodulr.com/css/button
+  ------------------------------------------------
+  @uses: modulr/button/*
+  @docs: true 
+\-------------------------------------------------*/
+
+/* 
+  @property: many
+  @desc: button reset
+*/
+
+[mod-button]{
+	background: transparent;
+	display: inline-block;
+	cursor: pointer;
+  padding: 5px  10px;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  transition: background  ease-in-out 0.1s;
+}
+
+/* 
+  @property: float
+  @desc: group buttons
+*/
+
+[mod-group~="buttons"] [mod-button],
+[mod-group~="button-with-addon"] [mod-button]{
+	float: left;
+}
+
+/* 
+  @property: button:hover
+  @desc: on hover button darken fill
+*/
+
+[mod-button]:hover{
+	border-image: linear-gradient(rgba(0,0,0,0.12),rgba(0,0,0,0.12));
+	background-image: linear-gradient(rgba(0,0,0,0.12),rgba(0,0,0,0.12))!important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000, endColorstr=#26000000)"!important;
+}
+
+button::-moz-focus-inner {
+  border:0;
+  padding:0;
+}
+
+/* 
+  @property: many
+  @desc: center button and buttons
+*/
+
+[mod-button~="center"]{
+	display: block;
+	float: none;
+	margin: 0 auto;
+}
+
+/* 
+  @property: many
+  @desc: fab button reset
+*/
+
+[mod-button~="fab"],
+[mod-button~="fab"]:before,
+[mod-button~="fab"]:after{
+	padding: 0 !important;
+	top: 0;
+}
+[mod-button~="fab"][mod-button~="sm"]{
+	height: 22px;
+  width: 22px;
+	font-size: 13px;
+	line-height: 22px;
+}
+[mod-button~="fab"][mod-button~="md"]{
+	height: 32px;
+  width: 32px;
+  font-size: 18px; 
+	line-height: 32px; 
+}
+[mod-button~="fab"][mod-button~="lg"]{
+  height: 42px;
+  width: 42px;
+  font-size: 27px;
+	line-height: 42px; 
+}
+[mod-button~="fab"][mod-button~="xl"]{
+  height: 50px;
+  width: 50px;
+  font-size: 32px;
+	line-height: 50px; 
+}
+[mod-button~="fab"][mod-button~="xxl"]{
+  height: 58px;
+  width: 58px;
+  font-size: 38px;
+	line-height: 58px; 
+}
+
+/* 
+  @property: color
+  @desc: themed button color
+*/
+
+[mod-button~="info"],
+[mod-button~="success"],
+[mod-button~="warning"],
+[mod-button~="danger"],
+[mod-group~="info"] [mod-button],
+[mod-group~="success"] [mod-button],
+[mod-group~="warning"] [mod-button],
+[mod-group~="danger"] [mod-button]{
+	color: #ffffff;
+}
+
+/* 
+  @property: background
+  @desc: default button background
+*/
+
+[mod-group~="default"] [mod-button],
+[mod-button~="default"]{
+	background: #dcdcdc;
+}
+
+/* 
+  @property: background
+  @desc: info button
+*/
+
+[mod-group~="info"] [mod-button],
+[mod-button~="info"]{
+	border-color: #15a3ff;
+	background: #15a3ff;
+}
+
+/* 
+  @property: background
+  @desc: success button
+*/
+
+[mod-group~="success"] [mod-button],
+[mod-button~="success"]{
+	border-color: #2AA583;
+	background: #2AA583;
+}
+
+/* 
+  @property: background
+  @desc: warning button
+*/
+
+[mod-group~="warning"] [mod-button],
+[mod-button~="warning"]{
+	border-color: #F3AB44;
+	background: #F3AB44;
+}
+
+/* 
+  @property: background
+  @desc: danger button
+*/
+
+[mod-group~="danger"] [mod-button],
+[mod-button~="danger"]{
+	border-color: #EA4335;
+	background: #EA4335;
+}
+
+
+/* 
+  @property: background
+  @desc: button addons
+*/
+
+[mod-group] [mod-button~="addon"],
+[mod-button~="addon"]{
+	background: transparent !important;
+}
+
+/* 
+  @property: color and border
+  @desc: button addons default
+*/
+
+[mod-group~="default"] [mod-button~="addon"],
+[mod-button~="default"][mod-button~="addon"]{
+	color: #dcdcdc;
+}
+
+/* 
+  @property: color and border
+  @desc: button addons info
+*/
+
+[mod-group~="info"] [mod-button~="addon"],
+[mod-button~="info"][mod-button~="addon"]{
+	color: #15a3ff;
+}
+
+/* 
+  @property: color and border
+  @desc: button addons success
+*/
+
+[mod-group~="success"] [mod-button~="addon"],
+[mod-button~="success"][mod-button~="addon"]{
+	color: #2AA583;
+}
+
+/* 
+  @property: color and border
+  @desc: button addons warning
+*/
+
+[mod-group~="warning"] [mod-button~="addon"],
+[mod-button~="warning"][mod-button~="addon"]{
+	color: #F3AB44;
+}
+
+/* 
+  @property: color and border
+  @desc: button addons warning
+*/
+
+[mod-group~="danger"] [mod-button~="addon"],
+[mod-button~="danger"][mod-button~="addon"]{
+	color: #EA4335;
+}
+
+/* 
+  @property: many
+  @desc: button size: small
+*/
+
+[mod-group~="sm"] [mod-button],
+[mod-button~="sm"]{
+	padding: 2px 5px 1px;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+/* 
+  @property: many
+  @desc: button size: large
+*/
+
+[mod-group~="lg"] [mod-button],
+[mod-button~="lg"]{
+	font-size: 17px;
+  padding: 8px  15px;
+}
+
+/* 
+  @property: many
+  @desc: button size: extra large
+*/
+
+[mod-group~="xl"] [mod-button],
+[mod-button~="xl"]{
+	font-size: 21px;
+  padding: 9px 16px;
+}
+
+/* 
+  @property: many
+  @desc: button size: extra extra larg
+*/
+
+[mod-group~="xxl"] [mod-button],
+[mod-button~="xxl"]{
+	font-size: 27px;
+  padding: 9px 20px;
+}
+
+/* 
+  @property: many
+  @desc: glossy button - size: small
+*/
+
+[mod-button~="sm"][mod-button~="glossy"],
+[mod-button~="sm"][mod-button~="on-hover-glossy"]:hover{
+  box-shadow: inset 0 9px 0 rgba(255,255,255,.26);
+  -wbkit-box-shadow: inset 0 9px 0 rgba(255,255,255,.26);
+  -moz-box-shadow: inset 0 9px 0 rgba(255,255,255,.26);
+}
+
+/* 
+  @property: many
+  @desc: glossy button - size: medium
+*/
+
+[mod-button~="md"][mod-button~="glossy"],
+[mod-button~="md"][mod-button~="on-hover-glossy"]:hover{
+  box-shadow: inset 0 15px 0 rgba(255,255,255,.26);
+  -wbkit-box-shadow: inset 0 15px 0 rgba(255,255,255,.26);
+  -moz-box-shadow: inset 0 15px 0 rgba(255,255,255,.26);
+}
+
+/* 
+  @property: many
+  @desc: glossy button - size: large
+*/
+
+[mod-button~="lg"][mod-button~="glossy"],
+[mod-button~="lg"][mod-button~="on-hover-glossy"]:hover{
+  box-shadow: inset 0 21px 0 rgba(255,255,255,.26);
+  -wbkit-box-shadow: inset 0 21px 0 rgba(255,255,255,.26);
+  -moz-box-shadow: inset 0 21px 0 rgba(255,255,255,.26);
+}
+
+/* 
+  @property: many
+  @desc: glossy button - size: extra large
+*/
+
+[mod-button~="xl"][mod-button~="glossy"],
+[mod-button~="xl"][mod-button~="on-hover-glossy"]:hover{
+  box-shadow: inset 0 24px 0 rgba(255,255,255,.26);
+  -wbkit-box-shadow: inset 0 24px 0 rgba(255,255,255,.26);
+  -moz-box-shadow: inset 0 24px 0 rgba(255,255,255,.26);
+}
+
+/* 
+  @property: many
+  @desc: glossy button - size: extra extra large
+*/
+
+[mod-button~="xxl"][mod-button~="glossy"],
+[mod-button~="xxl"][mod-button~="on-hover-glossy"]:hover{
+  box-shadow: inset 0 31px 0 rgba(255,255,255,.26);
+  -wbkit-box-shadow: inset 0 31px 0 rgba(255,255,255,.26);
+  -moz-box-shadow: inset 0 31px 0 rgba(255,255,255,.26);
+}
+
+/* 
+  @property: many
+  @desc: gradient button
+*/
+
+[mod-button~="gradient"] {
+  background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.15))!important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000, endColorstr=#26000000)"!important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.15)!important;
+}
+
+/* 
+  @property: many button:hover
+  @desc: on hover gradient button
+*/
+
+[mod-button~="on-hover-gradient"]:hover{
+  background-image: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.26))!important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000, endColorstr=#28000000)"!important;
+}
+
+
+/* 
+  @property: background-image
+  @desc: fix button hover when using custom color
+*/
+
+[mod-background][mod-button]:hover,
+[mod-button~="disable-on-hover"]:hover,
+[mod-group] [mod-button~="addon"]:hover,
+[mod-group~="button-with-addon"] [mod-button]:hover,
+[mod-group~="disable-on-hover"] [mod-button]:hover {
+	background-image: none !important;
+  -ms-filter: none !important;
+	border-image: none !important;
+}
+
+/* 
+  @property: many
+  @desc: disable button
+*/
+
+[mod-button~="disabled"]{
+	background: #cccccc !important;
+	color: #999999 !important;
+	cursor: not-allowed !important;
+	border-color: #cccccc !important;
+}
+[mod-button~="disabled"]:hover{
+	background-image: none !important;
+}
+
+/* 
+  @property: width / display / flex
+  @desc: flex and with on button and buttons
+*/
+
+[mod-button~="full-width"],
+[mod-group~="buttons"][mod-group~="full-width"]{
+	width: 100%;
+}
+[mod-group~="buttons"][mod-group~="full-width"]{
+	width: 100%;
+}
+[mod-group~="buttons"][mod-group~="vertical"]{
+	display: flex;
+	flex-direction: column;
+}
+[mod-group~="buttons"][mod-group~="horizontal"]{
+	display: flex;
+}
+[mod-group~="buttons"][mod-group~="horizontal"] [mod-button]{
+	flex: 1;
+}
