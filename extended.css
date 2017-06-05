@@ -16,9 +16,9 @@
 */
 
 [mod-button]{
-	background: transparent;
-	display: inline-block;
-	cursor: pointer;
+  background: transparent;
+  display: inline-block;
+  cursor: pointer;
   padding: 5px  10px;
   line-height: 1.42857143;
   text-align: center;
