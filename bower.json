@@ -1,0 +1,26 @@
+{
+  "name": "modulr-button",
+  "homepage": "https://github.com/ModulrCSS/button",
+  "authors": [
+    "uloga <wpnemesis@gmail.com>"
+  ],
+  "description": "Modulr.css button module",
+  "main": "",
+  "keywords": [
+    "buttons",
+    "frontend",
+    "framework",
+    "boostrap",
+    "gradient",
+    "glossy",
+    "modulr"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

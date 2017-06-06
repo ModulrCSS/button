@@ -2,7 +2,7 @@
 
 @media (min-width: 1920px){
 
-  [mod-if-screen-xl~="fab-sm"][mod-button]{
+	[mod-if-screen-xl~="fab-sm"][mod-button]{
 		height: 22px;
 		width: 22px;
 		font-size: 13px;
@@ -42,7 +42,7 @@
 	[mod-if-screen-xl~="mod-button-md"][mod-button]{
 		padding: 5px  10px;
 		font-size: 14px;
-  	line-height: 1.42857143;
+		line-height: 1.42857143;
 	}
 	[mod-if-screen-xl~="mod-group-lg"] [mod-button],
 	[mod-if-screen-xl~="mod-button-lg"][mod-button]{
@@ -81,7 +81,7 @@
 /* large size */
 
 @media (max-width: 1920px){
-  
+	
 	[mod-if-screen-lg~="fab-sm"][mod-button]{
 		height: 22px;
 		width: 22px;
@@ -122,7 +122,7 @@
 	[mod-if-screen-lg~="mod-button-md"][mod-button]{
 		padding: 5px  10px;
 		font-size: 14px;
-  	line-height: 1.42857143;
+		line-height: 1.42857143;
 	}
 	[mod-if-screen-lg~="mod-group-lg"] [mod-button],
 	[mod-if-screen-lg~="mod-button-lg"][mod-button]{
@@ -161,7 +161,7 @@
 
 @media (max-width: 1280px){
 
-  [mod-if-screen-md~="fab-sm"][mod-button]{
+	[mod-if-screen-md~="fab-sm"][mod-button]{
 		height: 22px;
 		width: 22px;
 		font-size: 13px;
@@ -201,7 +201,7 @@
 	[mod-if-screen-md~="mod-button-md"][mod-button]{
 		padding: 5px  10px;
 		font-size: 14px;
-  	line-height: 1.42857143;
+		line-height: 1.42857143;
 	}
 	[mod-if-screen-md~="mod-group-lg"] [mod-button],
 	[mod-if-screen-md~="mod-button-lg"][mod-button]{
@@ -239,7 +239,7 @@
 /* small size */
 
 @media (max-width: 960px){
-  
+	
 	[mod-if-screen-sm~="fab-sm"][mod-button]{
 		height: 22px;
 		width: 22px;
@@ -281,7 +281,7 @@
 	[mod-if-screen-sm~="mod-button-md"][mod-button]{
 		padding: 5px  10px;
 		font-size: 14px;
-  	line-height: 1.42857143;
+		line-height: 1.42857143;
 	}
 	[mod-if-screen-sm~="mod-group-lg"] [mod-button],
 	[mod-if-screen-sm~="mod-button-lg"][mod-button]{
@@ -360,7 +360,7 @@
 	[mod-if-screen-xs~="mod-button-md"][mod-button]{
 		padding: 5px  10px;
 		font-size: 14px;
-  	line-height: 1.42857143;
+		line-height: 1.42857143;
 	}
 	[mod-if-screen-xs~="mod-group-lg"] [mod-button],
 	[mod-if-screen-xs~="mod-button-lg"][mod-button]{
@@ -438,7 +438,7 @@
 	[mod-if-screen-xxs~="mod-button-md"][mod-button]{
 		padding: 5px  10px;
 		font-size: 14px;
-  	line-height: 1.42857143;
+		line-height: 1.42857143;
 	}
 	[mod-if-screen-xxs~="mod-group-lg"] [mod-button],
 	[mod-if-screen-xxs~="mod-button-lg"][mod-button]{
