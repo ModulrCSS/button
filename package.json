@@ -1,0 +1,27 @@
+{
+  "name": "@modulr/button",
+  "version": "1.0.0",
+  "description": "Modulr.css Button Module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ModulrCSS/button.git"
+  },
+  "keywords": [
+    "buttons",
+    "css",
+    "html",
+    "boostrap",
+    "frontend",
+    "modulr"
+  ],
+  "author": "Alan Museljic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ModulrCSS/button/issues"
+  },
+  "homepage": "https://github.com/ModulrCSS/button#readme"
+}
