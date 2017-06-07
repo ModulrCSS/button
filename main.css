@@ -43,10 +43,11 @@
   @desc: on hover button darken fill
 */
 
-[mod-button]:hover{
+[mod-button]:hover,
+[mod-button][mod-active]{
   border-image: linear-gradient(rgba(0,0,0,0.12),rgba(0,0,0,0.12));
   background-image: linear-gradient(rgba(0,0,0,0.12),rgba(0,0,0,0.12))!important;
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000, endColorstr=#26000000)"!important;
+  filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000, endColorstr=#26000000)"!important;
 }
 
 button::-moz-focus-inner {
@@ -416,4 +417,114 @@ button::-moz-focus-inner {
 }
 [mod-group~="buttons"][mod-group~="horizontal"] [mod-button]{
   flex: 1;
+}
+
+/* 
+  @property: many
+  @desc: button ripple effect
+*/
+
+[mod-button~="ripple"]{
+  overflow: hidden;
+  position: relative;
+}
+[mod-button~="ripple"]:not([mod-border]){
+  border: none;
+}
+[mod-button~="ripple"]:not([mod-icon~="before"]):before,
+[mod-button~="ripple"][mod-icon~="after"]:before,
+[mod-button~="ripple"][mod-icon~="before"]:after,
+[mod-button~="ripple"][mod-button~="fab"]:before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, .5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(25, 25);
+    opacity: 1;
+  }
+  60% {
+    transform: scale(65, 65);
+    opacity: 0.26;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(100, 100);
+  }
+}
+
+@keyframes fixer {
+  0% {
+    transform: scale(0, 0);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(25, 25);
+    opacity: 1;
+  }
+  60% {
+    transform: scale(65, 65);
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(100, 100);
+  }
+}
+
+[mod-button~="ripple"]:not([mod-icon~="before"]):focus:not(:active)::before,
+[mod-button~="ripple"]:not([mod-icon~="after"]):focus:not(:active)::after{
+  animation: ripple 1.8s ease-out;
+}
+[mod-button~="sm"]:focus:not(:active)::after,
+[mod-button~="sm"]:focus:not(:active)::before{
+  animation-duration: 2.2s !important;
+}
+[mod-button~="lg"]:focus:not(:active)::after,
+[mod-button~="lg"]:focus:not(:active)::before{
+  animation-duration: 1.4s !important;
+}
+[mod-button~="xl"]:focus:not(:active)::after,
+[mod-button~="xl"]:focus:not(:active)::before{
+  animation-duration: 1s !important;
+}
+[mod-button~="xxl"]:focus:not(:active)::after,
+[mod-button~="xxl"]:focus:not(:active)::before{
+  animation-duration: 0.8s !important;
+}
+
+/* __ fab ripple animations __ */
+
+[mod-button~="ripple"][mod-button~="fab"]::after{
+  animation: fixer 1s ease !important;
+}
+
+[mod-button~="fab"][mod-button~="sm"]:focus:not(:active)::before{
+  animation-duration: 2.3s !important;
+}
+[mod-button~="fab"][mod-button~="md"]:focus:not(:active)::before{
+  animation-duration: 2.1s !important;
+}
+[mod-button~="fab"][mod-button~="lg"]:focus:not(:active)::before{
+  animation-duration: 2s !important;
+}
+[mod-button~="fab"][mod-button~="xl"]:focus:not(:active)::before{
+  animation-duration: 1.7s !important;
+}
+[mod-button~="fab"][mod-button~="xxl"]:focus:not(:active)::before{
+  animation-duration: 1.4s !important;
 }
