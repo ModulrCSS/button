@@ -7,7 +7,7 @@ import styles from './Button.css';
 class ModButton extends Component {
 
   constructor(props) {
-    
+
     super(props);
 
     this.state = {
@@ -26,7 +26,7 @@ class ModButton extends Component {
 
   render(){
     return(
-      <button className={styles.button} onClick={this.update}>this.props.children</button>
+      <button className={styles.button} onClick={this.update}>{this.props.children}</button>
     );
   }
 
