@@ -1,6 +1,6 @@
 {
   "name": "@modulr/button",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Modulr.css Button Module",
   "main": "index.js",
   "scripts": {
